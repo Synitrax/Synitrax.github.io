@@ -213,136 +213,171 @@
     }
     footer { text-align: center; padding: 4rem 0; color: var(--text-light); font-size: 0.85rem; }
     </style>
-</head>
-<body>
-
-    <button id="nav-toggle">☰</button>
-
-    <nav id="main-nav">
-        <button id="nav-close">✕</button>
-        <a onclick="showTab('home')" id="link-home">🏠 Home</a>
-        <a onclick="showTab('about')" id="link-about">🐾 About Me</a>
-        <a onclick="showTab('research')" id="link-research">🔬 Research</a>
-        <a onclick="showTab('future-plans')" id="link-future-plans">🌱 Future Plans</a>
-        <a onclick="showTab('contact')" id="link-contact">📞 Contact</a>
-    </nav>
-    <div id="home" class="tab-content active">
-        <header>
-            <img src="images/IMG_7028.jpeg" alt="Nathan Carter" style="width: 150px; height: 150px; border-radius: 50%; flex-shrink: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1); object-fit: cover;">
+    </head>
+    <body>
+    
+        <button id="nav-toggle">☰</button>
+    
+        <nav id="main-nav">
+            <button id="nav-close">✕</button>
+            <a onclick="showTab('home')" id="link-home">🏠 Home</a>
+            <a onclick="showTab('about')" id="link-about">🐾 About Me</a>
+            <a onclick="showTab('research')" id="link-research">🔬 Research</a>
+            <a onclick="showTab('future-plans')" id="link-future-plans">🌱 Future Plans</a>
+            <a onclick="showTab('contact')" id="link-contact">📞 Contact</a>
+        </nav>
+        <div id="home" class="tab-content active">
+        <header class="hero-header">
+            <img src="images/IMG_7028.jpeg" alt="Headshot of Nathan Carter" class="profile-pic">
             
             <div class="header-text-container">
                 <h1>Nathan Carter</h1>
-                <p style="font-size: 1.2rem; color: var(--text-light); margin: 0.5rem 0;">PhD Applicant & Researcher in Statistics and Mathematics</p>
-                <p style="max-width: 500px;">Welcome! I am a researcher focused on the intersection between Mathematics and the world of animals. I plan on working in problems in Zoology, Ecology, and Biology as a Mathematician/Statistician.</p>
-                <a href="images/CV.pdf" class="cv-button">Download Full CV</a>
+                <p class="subtitle">PhD Applicant & Applied Mathematics Researcher</p>
+                <p class="intro-text">
+                    Welcome! I am an applied mathematician exploring continuous optimization, dynamical systems, and search theory—focusing on the theoretical frameworks that drive complex real-world modeling.
+                </p>
+                <div class="cta-buttons">
+                    <a href="images/CV.pdf" class="cv-button">Download Full CV</a>
+                    <a href="#research" class="secondary-button">Explore Research</a>
+                </div>
             </div>
         </header>
+    
+        <section class="highlights-grid">
+            <div class="highlight-card">
+                <h3>Current Research</h3>
+                <p>Member of the Optimization Algorithms and Theory Lab, investigating continuous algorithms and stability models.</p>
+            </div>
+            <div class="highlight-card">
+                <h3>Background</h3>
+                <p>Former Software & DevOps Engineer with a strong foundation in computational mathematics and programming.</p>
+            </div>
+            <div class="highlight-card">
+                <h3>Next Steps</h3>
+                <p>Preparing for PhD programs focused on continuous modeling, search theory, and interdisciplinary math.</p>
+            </div>
+        </section>
     </div>
 
-    <div id="about" class="tab-content">
+     <div id="about" class="tab-content">
         <section>
             <h2>About Me</h2>
             <p>
-                My journey began in Northern Virginia, though growing up in a military family meant my early years were defined by constant movement across the United States. Throughout these changes, two things remained constant: a profound connection to animals and a fascination with how the world is structured.
+                While I was born in South Carolina, growing up in a military family meant that a lot of my early years were spent moving across the United States. Through all of these moves and changes, two things stayed constant: my love for games and my passion for learning new things.
             </p>
             <p>
-                While I initially expected to become a veterinarian even shadowing at clinics as a child my path took a detour through the arts. I spent nine years as a saxophonist, earning various honors and intending to pursue music professionally. However, during my time at James Madison University, I discovered a "hidden beauty" in Mathematics and Statistics. My experience in Linear Algebra was a turning point; it transformed math from a subject I simply enjoyed into a lifelong calling.
+                While I initially expected to become a veterinarian—even shadowing at clinics as a child—my path took a detour through the arts. I spent nine years as a saxophonist, earning various honors and intending to pursue music professionally. However, during my time at James Madison University, I discovered a hidden beauty in Mathematics. My experiences in early math courses marked a turning point, transforming a subject I once wrote off into a lifelong calling.
             </p>
             <p>
-                After spending time as a Software and DevOps Engineer, I realized that my true passion lies in the intersection of theory and application. I have since presented research both within and outside of JMU, and I am now dedicated to bridging my two worlds: Mathematics and Animal Science. I believe that quantitative rigor can unlock new insights into the biological world I’ve loved since childhood.
+                After working as a Software and DevOps Engineer, I realized that my true passion lies at the intersection of theory and application. I have since presented research both within and outside of JMU, and I am now dedicated to pursuing a life in academia and advanced mathematics. I believe that quantitative rigor can unlock new insights into the world that many may not recognize as possible.
             </p>
             <p>
-                When I’m not deep in a proof or researching, you can find me tutoring students in music and math, gaming, or spending time with my girlfriend. I am a firm believer in the power of lifelong academia and am always looking for the next complex problem to solve.
+                When I’m not deep in a proof or researching, you can find me tutoring students in music and math, volunteering, or spending time with my girlfriend. I am a firm believer in the power of lifelong learning and am always looking for the next complex problem to solve.
             </p>
         </section>
-
+    
         <section id="volunteering">
             <h3>Community Involvement</h3>
-            Not only do I love math and animals, but I also love giving back to my community. I have volunteered at various organizations and events, both related to my academic interests and in other areas. Here are some of the places I have volunteered:
+            <p>
+                In addition to my passion for mathematics and animal welfare, I am committed to giving back to my community. Here are some of the organizations and events I have had the privilege to support:
+            </p>
             <hr>
             <ul>
                 <li>
-                    <strong>James Madison University Stem Corp</strong> – <em></em><br>
-                    Went to the local element school twice a week and helped to give fun lessons in biology to the students.
+                    <strong>Anicira Pet Food Pantry</strong> – <em>Volunteer</em><br>
+                    Helped weekly to distribute pet food to community members in need.
                 </li>
                 <li>
-                    <strong>Cat's Cradle</strong> – <em>Volunteer Tutor</em><br>
-                    Went to the local cat shelter twice a week and helped maintain the facility and take car of the cats.
+                    <strong>James Madison University STEM Corps</strong> – <em>Student Volunteer</em><br>
+                    Visited a local elementary school twice a week to facilitate engaging biology lessons for students.
                 </li>
                 <li>
-                    <strong>World Tutors</strong> – <em>General Volunteer</em><br>
-                    Taught twice to four times a week helping students learn math from a elementary level to a high school level. During this time
-                    I also taught english and science to students who needed help in those subjects.
+                    <strong>Cat's Cradle</strong> – <em>Shelter Volunteer</em><br>
+                    Volunteered twice a week to assist with facility maintenance and daily cat care.
                 </li>
                 <li>
-                    <strong>High School Band Tutor</strong> – <em>General Volunteer</em><br>
-                    Taught several intstruments to high school students in the local area. Including, Saxaphone, Clarinet, Piano, Trumpet, and Drums.
+                    <strong>World Tutors</strong> – <em>Volunteer Tutor</em><br>
+                    Tutored students two to four times a week in elementary through high school mathematics, as well as English and science.
                 </li>
                 <li>
-                    <strong>National Honors Society</strong> – <em>General Volunteer</em><br>
-                    Volunteered at various events in the local area.
+                    <strong>High School Band Tutor</strong> – <em>Volunteer Music Instructor</em><br>
+                    Provided instrumental instruction to local high school students across saxophone, clarinet, piano, trumpet, and percussion.
                 </li>
                 <li>
-                    <strong>Local Food Bank</strong> – <em>General Volunteer</em><br>
-                    Helped once a year for several years to help package foods such as rice and beans to be sent to those in need.
+                    <strong>National Honor Society</strong> – <em>Student Volunteer</em><br>
+                    Participated in various community service projects and local initiatives.
                 </li>
                 <li>
-                    <strong>Caring Hands Animal Hospital Volunteer</strong> – <em>General Volunteer</em><br>
-                    Shadowed veterinarians and assisted with animal care.
+                    <strong>Local Food Bank</strong> – <em>Volunteer</em><br>
+                    Participated in annual food drive packing events to prepare non-perishable goods for distribution.
+                </li>
+                <li>
+                    <strong>Caring Hands Animal Hospital</strong> – <em>Clinical Volunteer</em><br>
+                    Shadowed veterinarians and assisted staff with daily patient care and clinic support.
                 </li>
             </ul>
         </section>
     </div>
-
+    
     <div id="research" class="tab-content">
         <section>
             <h2>Current Research</h2>
-            <p><strong>Optimization Algorithms and Theory Laboratory</strong><br>Starting in Summer 2026</p>
-            <h2>Past research</h2>
-            <ul>
+            <div class="research-item">
+                <p>
+                    <strong>Optimization Algorithms and Theory Laboratory</strong><br>
+                    <span>Summer 2026 – Present</span>
+                </p>
+            </div>
+    
+            <h2>Past Research and Presentations</h2>
+            <ul class="research-list">
                 <li>
-                    <strong>Stability of Proximal Average Relaxation for Signal Recovery</strong>
-                    <ul>
-                        <li style="list-style-type: none; color: #555;">
-                            <em>Presented at: James Madison University</em>
-                            <br><small><a href="images/OAT_PAS_Presentation.pdf" style="color: var(--primary);">[View Presentation Slides]</a></small>
-                        </li>
-                    </ul>
+                    <div class="project-title">
+                        <strong>Stability of Proximal Average Relaxation for Signal Recovery</strong>
+                    </div>
+                    <div class="research-meta">
+                        <em>Presented at: James Madison University</em>
+                        <a href="images/OAT_PAS_Presentation.pdf" class="slide-link" aria-label="View presentation slides for Stability of Proximal Average Relaxation">[View Presentation Slides]</a>
+                    </div>
                 </li>
                 <li>
-                    <strong>Normal Mixture Density Estimation for Major US Stock: A Four-Year Empirical Study.</strong>
-                    <ul>
-                        <li style="list-style-type: none; color: #555;">
-                            <em>Presented at: James Madison University and Mathematical Association of America VA MD DC section</em>
-                            <br><small><a href="images/JMU_Stats_Research.pdf" style="color: var(--primary);">[View Presentation Slides]</a></small>
-                        </li>
-                    </ul>
+                    <div class="project-title">
+                        <strong>Normal Mixture Density Estimation for Major US Stocks: A Four-Year Empirical Study</strong>
+                    </div>
+                    <div class="research-meta">
+                        <em>Presented at: James Madison University and MAA MD-DC-VA Section</em>
+                        <a href="images/JMU_Stats_Research.pdf" class="slide-link" aria-label="View presentation slides for Normal Mixture Density Estimation">[View Presentation Slides]</a>
+                    </div>
                 </li>
                 <li>
-                    <strong>A Comprehensive Examination of University-Based Induction Support for Early Career Teachers.</strong>
-                    <ul>
-                        <li style="list-style-type: none; color: #555;">
-                            <em>Presented at: James Madison University FYRE Symposium</em>
-                            <br><small><a href="images/Poster.pdf" style="color: var(--primary);">[View Presentation Poster]</a></small>
-                        </li>
-                    </ul>
+                    <div class="project-title">
+                        <strong>A Comprehensive Examination of University-Based Induction Support for Early Career Teachers</strong>
+                    </div>
+                    <div class="research-meta">
+                        <em>Presented at: James Madison University FYRE Symposium</em>
+                        <a href="images/Poster.pdf" class="slide-link" aria-label="View presentation poster for University-Based Induction Support">[View Presentation Poster]</a>
+                    </div>
                 </li>
             </ul>
         </section>
     </div>
-
+    
     <div id="future-plans" class="tab-content">
         <section>
-            <h2>Future Plans: Research in Statistical Ecology/Biology 🐾🔢</h2>
-            <p>I plan to pursue advanced research in statistical ecology and biology, focusing on mathematical models for animal populations and ecosystems. 🌿</p>
-            <p><strong>Key Interests:</strong></p>
+            <h2>Future Plans: Research in Applied Mathematics</h2>
+            <p>
+                I plan to pursue graduate studies and research in applied mathematics, focusing on how continuous modeling, optimization, and dynamical systems can be applied to complex real-world phenomena.
+            </p>
+            <p><strong>Areas of Interest:</strong></p>
             <ul>
-                <li>Developing probabilistic models for wildlife conservation using Bayesian statistics.</li>
-                <li>Using Bayesian Search Theory to locate endangered species.</li>
-                <li>Utilizing mathematical optimization techniques to improve conservation strategies.</li>
-                <li>Collaborating on interdisciplinary projects combining math, biology, and environmental science.</li>
+                <li>Applied optimization, continuous algorithms, and numerical analysis.</li>
+                <li>Search theory and optimal search strategies for target detection and location problems.</li>
+                <li>Applied optimization techniques and numerical algorithms for physical and ecological systems.</li>
+                <li>Flexible quantitative modeling across physical, computational, and natural systems.</li>
             </ul>
-            <p>These plans align with my passion for using ∑ and π to understand nature's patterns. 🦌➕📈</p>
+            <p>
+                While I remain deeply interested in search theory and computational modeling, I aim to build a strong foundation across deterministic and stochastic methods before selecting a specific dissertation topic. I am excited to explore new subfields in applied math and build tools that translate across disciplines.
+            </p>
         </section>
     </div>
 
